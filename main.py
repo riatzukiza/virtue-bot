@@ -25,7 +25,8 @@ def main():
 
     team_name = config.TEAM_NAME
     channel_name = config.CHANNEL_NAME
-    members = utils.get_channel_members(driver, team_name, channel_name)
+    utils.post_quote(driver, channel_name)
+
 
 
 
