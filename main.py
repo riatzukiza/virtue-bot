@@ -1,5 +1,7 @@
-from coffeebot import config, utils
 from mattermostdriver import Driver
+
+import config
+import utils
 
 
 def main():
@@ -23,7 +25,6 @@ def main():
     driver.login()
     driver.users.get_user('me')
 
-    team_name = config.TEAM_NAME
     channel_name = config.CHANNEL_NAME
     utils.post_quote(driver, channel_name)
 
